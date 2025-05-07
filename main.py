@@ -14,6 +14,10 @@ def index():
 @app.get('/log')
 def index():
     return {'data': 'FastAPI Logs'}
-    
+
+@app.get('/app')
+def index():
+    return {'data': 'FastAPI app'}
+
 if __name__ == "__main__":
     uvicorn.run(app, host='0.0.0.0', port=8080)
