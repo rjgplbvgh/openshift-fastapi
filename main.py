@@ -10,6 +10,10 @@ def index():
 @app.get('/message')
 def index():
     return {'data': 'FastAPI is great!'}
-
+    
+@app.get('/log')
+def index():
+    return {'data': 'FastAPI Logs'}
+    
 if __name__ == "__main__":
     uvicorn.run(app, host='0.0.0.0', port=8080)
